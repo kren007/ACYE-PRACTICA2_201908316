@@ -19,279 +19,264 @@ CrearRep macro
     mov dx, -1  
     int 21h
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset llaI
-    int 21h
+    Escribir 1, llaI
+    Escribir 1, abajo
+    Escribir 9, repp
+    Escribir 1, abajo
+    Escribir 1, llaI
+    Escribir 1, abajo
+    Escribir 8, allu
+    Escribir 1, puntos
+    Escribir 1, abajo
+    Escribir 1, llaI
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
+    Escribir 1, abajo
+    Escribir 8, nom
+    Escribir 1, puntos
+    Escribir 15, nomr
+    Escribir 1, coma
 
-    mov ah, 40h
-    mov cx, 9
-    mov dx, offset repp
-    int 21h
+    Escribir 1, abajo
+    Escribir 8, carn
+    Escribir 1, puntos
+    Escribir 11, carnr
+    Escribir 1, coma
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
+    Escribir 1, abajo
+    Escribir 9, secc
+    Escribir 1, puntos
+    Escribir 1, seccr
+    Escribir 1, coma
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset llaI
-    int 21h
+    Escribir 1, abajo
+    Escribir 7, cur
+    Escribir 1, puntos
+    Escribir 8, curs
+    Escribir 1, abajo
+    Escribir 1, llaD
+    Escribir 1, coma
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
+    Escribir 1, abajo
+    Escribir 7, fec
+    Escribir 1, puntos
+    Escribir 1, abajo
+    Escribir 1, llaI
+    Escribir 1, abajo
+
+    Escribir 5, Dia
+    Escribir 1, puntos
+    Escribir 2, dAc
+    Escribir 1, coma
+    Escribir 1, abajo
+
+    Escribir 5, Mes
+    Escribir 1, puntos
+    Escribir 2, dMes
+    Escribir 1, coma
+    Escribir 1, abajo
+
+    Escribir 6, year
+    Escribir 1, puntos
+    Escribir 4, dAy
+    Escribir 1, abajo
+    Escribir 1, llaD
+    Escribir 1, coma
+
+    ; falta hora
+
+    Escribir 12, ress
+    Escribir 1, puntos
+    Escribir 1, abajo
+    Escribir 1, llaI 
+    Escribir 1, abajo
+
+    Escribir 7, Med
+    Escribir 1, puntos
     
-    mov ah, 40h
-    mov cx, 8
-    mov dx, offset allu
-    int 21h
+    Mostrar Media
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
+    Escribir 4, resultm
+    Escribir 1, coma
+    Escribir 1, abajo
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset llaI
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 8
-    mov dx, offset nom
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
-
-    mov ah, 40h
-    mov cx, 15
-    mov dx, offset nomr
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
+    Escribir 7, Med1
+    Escribir 1, puntos
     
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
+    Mostrar Mediana
 
-    mov ah, 40h
-    mov cx, 8
-    mov dx, offset carn
-    int 21h
+    Escribir 4, resultm
+    Escribir 1, coma
+    Escribir 1, abajo
 
-     mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
+    Escribir 7, Men
+    Escribir 1, puntos
+    
+    Mostrar Menor
 
-    mov ah, 40h
-    mov cx, 11
-    mov dx, offset carnr
-    int 21h
+    Escribir 4, resultm
+    Escribir 1, coma
+    Escribir 1, abajo
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
 
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
+    Escribir 7, May
+    Escribir 1, puntos
+    
+    Mostrar Mayor
 
-    mov ah, 40h
-    mov cx, 9
-    mov dx, offset secc
-    int 21h
+    Escribir 4, resultm
+    Escribir 1, abajo
+    Escribir 1, llaD
+    Escribir 1, coma
+    Escribir 1, abajo
 
-     mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
+    Escribir contPa, Padrev
 
-    mov ah, 40h
-    mov cx, 3
-    mov dx, offset seccr
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 7
-    mov dx, offset cur
-    int 21h
-
-     mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
-
-    mov ah, 40h
-    mov cx, 8
-    mov dx, offset curs
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset llaD
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 7
-    mov dx, offset fec
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset llaI
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 5
-    mov dx, offset Dia
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
-
-    mov ah, 40h
-    mov cx, 2
-    mov dx, offset dAc
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 5
-    mov dx, offset Mes
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
-
-    mov ah, 40h
-    mov cx, 2
-    mov dx, offset  dMes
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 6
-    mov dx, offset year
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset puntos
-    int 21h
-
-    mov ah, 40h
-    mov cx, 4
-    mov dx, offset dAy
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset abajo
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset llaD
-    int 21h
-
-    mov ah, 40h
-    mov cx, 1
-    mov dx, offset coma
-    int 21h
-
+    Escribir 1, abajo
+    Escribir 1, llaI
+    Escribir 1, abajo  
+    
+   
     mov ah,3eh ;cierra el archivo
     int 21h
 
+endm
+
+ContIders macro  
+    
+    Mov ah, 3dh 
+    mov al, 1h
+    mov dx, offset reporte ; Abre el archivo de usarios
+    int 21h
+
+    mov bx, ax ; se va a ala ultima linea 
+    mov ah, 42h
+    mov al, 02
+    mov cx, -1
+    mov dx, -1  
+    int 21h
+    
+    push ax
+    push bx
+    push cx
+    push dx    
+    
+    mov si, 0 
+    mov cx, 0
+    mov contIdAux, 0
+    mov di, 0
+    comi:
+        cmp si, contTId
+        je yatermino
+        mov al, Idv[si]
+        cmp al, 2ch ; la coma ya termino
+        je terminaId  
+        mov cx, si
+        mov si, contIdAux
+        mov Idv2[si], al 
+        mov si, cx
+        inc si 
+        inc contIdAux
+        jmp comi
+    terminaId:
+        pop dx
+        pop cx
+        pop bx
+        pop ax
+        Escribir contIdAux, Idv2
+        Escribir 1, puntos
+        Mostrar Resultv2[di]
+        Escribir 4, resultm
+        Escribir 1, coma
+        Escribir 1, abajo
+        push ax
+        push bx
+        push cx
+        push dx
+        inc di
+        inc di
+        mov contIdAux, 0
+        inc si
+        jmp comi
+    yatermino: 
+        pop dx
+        pop cx
+        pop bx
+        pop ax
+        Escribir 1, llaD
+        Escribir 1, abajo
+        Escribir 1, llaD
+        Escribir 1, abajo
+        Escribir 1, llaD
+    
+    
+    mov ah,3eh ;cierra el archivo
+    int 21h
+           
+
+endm
+
+Escribir macro byt, buffer 
+    push ax
+    push dx
+    push cx
+    mov ah, 40h
+    mov cx, byt
+    mov dx, offset buffer
+    int 21h 
+    pop cx
+    pop dx
+    pop ax
+endm
+
+Mostrar macro numero
+   local demas, negado 
+   push bx
+   push ax
+   push cx
+   push si
+   
+   xor bx, bx
+   mov resultm[0],0
+   mov resultm[1],0
+   mov resultm[2],0
+   mov resultm[3],0
+   mov bl, 100
+   mov ax, numero 
+   cmp ax, 0
+   Jl negado
+   mov resultm[0], 0    ; queda la decena
+   jmp demas
+   negado:
+       mov resultm[0],2Dh     ; queda la decena
+       neg ax
+   demas:  
+        mov cx, ax
+        div bl     ; lo divide por 100 para empezar por las centenas
+        add al, 48
+        mov resultm[1], al   ; queda la centena  
+        sub al, 48
+        mov ah, 0
+        mul bl
+        sub cx, ax ; se le restan las centenas
+        xor ax, ax
+        mov ax, cx ; se le pasan las decenas 
+        xor bx, bx 
+        mov bl, 10      
+        div bl     ; lo divide por 10 para empezar por las decenas 
+        add al, 48
+        mov resultm[2], al   ; queda la decena
+        sub al, 48
+        mov ah, 0  
+        mul bl
+        sub cx, ax ; se le restan las decenas
+        xor ax, ax
+        mov ax, cx ; se le pasan las unidades  
+        add al, 48
+        mov resultm[3], al   ; queda la decena 
+   pop si
+   pop cx
+   pop ax
+   pop bx 
 endm
 
 MaMexd macro          
@@ -336,6 +321,7 @@ MedianaC macro
        mov Mediana, ax
     salida1:  
 endm
+
 
 MediaC macro
     local seguir,termina
@@ -424,6 +410,58 @@ Ordenar macro
 endm
 
 Comanaliza macro
+    local MMM, MEDD, MAYY, MENN, TalMa, casi, idss, sali, MEDA,sali2
+    cmp contCom, 10
+    je MMM
+    cmp contCom, 12
+    je TalMa
+    cmp contCom, 4
+    je sali2
+    MMM:
+    mov si, 9
+    mov al, Comando[si]
+    cmp al, 61h
+    je MEDD 
+    mov si, 6
+    mov al, Comando[si]
+    cmp al, 61h
+    je MAYY
+    cmp al, 65h
+    je MENN
+    MEDD:
+       Mostrar Media
+       print resultm
+       jmp sali
+    MAYY:
+       Mostrar Mayor
+       print resultm
+       jmp sali
+    MENN:
+       Mostrar Menor
+       print resultm
+       jmp sali
+    TalMa:
+       mov si, 5
+       mov al, Comando[si]
+       cmp al, 6dh
+       je casi
+       jmp idss
+    casi:
+       mov si, 11
+       mov al, Comando[si]
+       cmp al, 61h
+       je MEDA
+       jmp idss
+    MEDA:
+       Mostrar Mediana
+       print resultm
+       jmp sali
+    idss:
+        
+        jmp sali
+    sali2:  
+        mov exxi, 1
+    sali:
 endm
 
 BuscaId macro
@@ -733,7 +771,8 @@ Analiz macro
         xor si, si
         mov si, contId
         mov Idv[si], cl ; para pasarlo al vector
-        inc contId  
+        inc contId   
+        inc contTId
         mov si, contId
         mov Idv[si], 2ch ; guarda la coma para separar los id
         jmp Hijos
@@ -846,6 +885,7 @@ Analiz macro
         jmp Dores 
     rehijo:
           inc contId 
+          inc contTId 
           inc contOp
           jmp HijosP
     dato:
@@ -901,6 +941,7 @@ endm
 LeerComan macro
     local e1, e2
     mov contCom, 0
+    mov si, 0
     e1:
         xor ax, ax
         mov ah, 01h
@@ -944,20 +985,23 @@ endm
     opcion             db 0ah, 0dh,'=== MENU ===', 0ah, 0dh, '1. CARGAR ARCHIVO', 0ah, 0dh, '2. CONSOLA', 0ah, 0dh, '3. SALIR', 0ah, 0dh, '$'  
     msgCarga           db 0ah, 0dh,' ==== CARGAR ARCHIVO ====', 0ah, 0dh, '$' 
     msgConsola         db 0ah, 0dh,' ===== CONSOLA =====', 0ah, 0dh, '$'   
-    msgRes             db 0ah, 0dh,' ARCHIVO LEIDO CON EXITO', 0ah, 0dh, '$'
+    msgRes             db 0ah, 0dh,' ARCHIVO REALIZADO CON EXITO', 0ah, 0dh, '$'
     msgComan           db 0ah, 0dh, '>', '$'
     
     auxcontenidoar     db   1 dup('$') ; Guarda el caracter de archivos
-    nomArchivo         db  20 dup(0)   ; Vector de usuario ingresado
+    nomArchivo         db  20 dup(0)   ; Vector de usuario ingresado 
+    resultm            db  5  dup('$')   ; Vector de usuario ingresado
     Comando            db  20 dup('$')   ; Vector de usuario ingresado
     Padrev             db  20 dup('$') ; Vector de padre 
     Idv                db  100 dup('$'); Vector de id 
+    Idv2               db  15 dup('$'); Vector de id
     Operav             db  500 dup('$'); Vector de operacion
     Resultv            dw  20 dup(0) ; Vector de padre  
     Resultv2           dw  20 dup(0) ; Vector de padre
 
     contPa             dw 0 ; contadora del padre
     contId             dw 0 ; contadora de los id
+    contTId            dw 0 ; contadora de los id
     contIdAux          dw 0 ; contadora de los id
     contRes            dw 0
     contOp             dw 0 ; contadora de los operaciones
@@ -975,7 +1019,8 @@ endm
     Mayor              dw 0
     ck                 dw 0
     operando           db 0
-    negativo           db 0
+    negativo           db 0   
+    exxi               db 0
     repp               db '"Reporte"','$'  
     allu               db '"Alumno"','$' 
     nom                db '"Nombre"','$' 
@@ -993,6 +1038,13 @@ endm
     dMes               db '06','$'
     year               db '"Year"','$'
     dAy                db '2022','$' 
+    ress               db '"Resultados"','$' 
+    Med                db '"Media"','$' 
+    Med1                db '"Mediana"','$' 
+    Men                db '"Menor"','$' 
+    May               db '"Mayor"','$' 
+
+
     abajo              db 0dh ,'$'
     puntos             db ':','$'
     coma               db ',','$'
@@ -1001,8 +1053,9 @@ endm
     corI               db '[' ,'$'
     corD               db ']' ,'$'  
 
-    reporte            db 'hola.jso',0
- 
+    reporte            db 'rep.jso',0
+     
+
     salto    db 0ah,0dh, '$' ,'$' 
     handle          dw  ?
    
@@ -1015,6 +1068,7 @@ main proc
         print salto
         print enc  ; IMPRIME EL ENCABEZADO		
         print opcion  ; IMPRIME EL MENU	
+        mov exxi, 0
         getChar ; lee un caracter del teclado y lo guarda en al
 	    cmp al, 49 ; if (al == 49){va a brincar a la etiqueta Cargar}else{va a continuar en el encabezado}
         je Cargar ; salta al menu
@@ -1033,16 +1087,20 @@ main proc
         MediaC
         MaMexd
         CrearRep
+        ContIders
         Print salto 
         print msgRes
         print salto
+         
         jmp Enca
     Consola:
         print msgConsola
         print msgComan
         LeerComan
         Comanaliza 
-        
+        cmp exxi, 1
+        je Enca
+        jmp Consola
     Salir:
        close
 main endp
